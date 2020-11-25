@@ -1,0 +1,154 @@
+<!doctype html>
+<html> 
+<head>
+ <title>Calculadora con Java Script</title>
+ <style>
+  h1 {
+  font-size:40px;
+  font-family: impact;
+  color: gold;
+  background-color: black;
+  padding: 25px;
+  display: inline-block;
+  border: 3px solid gold;
+  }
+  .calculadora {
+  border-radius: 15px;
+  display:block;
+  background-color: silver;
+  padding: 25px;
+  width: 535px;
+  height: 800px;
+  border: 3px solid gray;
+  }
+  
+  .calculadora td button {
+  display: block;
+  width: 115px;
+  height: 115px;
+  font-size: 40px;
+  margin-bottom: 10px;
+  }
+  
+  #resultado{
+  display:block;
+  text-align: right;
+  font-size: 55px;
+  margin-bottom: 50px;
+  font-family: courier;
+  width:400px:
+  height:100px;
+  line-height:100px;
+  background-color:white;
+  }
+ 
+ .calculadora td button:hover{
+ color:honeydew;
+ background-color: grey;
+ }
+  
+  
+ </style>
+ 
+</head>
+<body onload="init();">
+ <h1>Calculadora con Java Script</h1>
+ 
+ <table class="calculadora">
+  <tr>
+   <td colspan="4"><span id="resultado"><span></td>
+  </tr>
+  <tr>
+   <td><button id="siete">7</td>
+   <td><button id="ocho">8</td>
+   <td><button id="nueve">9</td>
+   <td><button id="resta">-</td>
+  </tr>
+   <tr>
+   <td><button id="cuatro">4</td>
+   <td><button id="cinco">5</td>
+   <td><button id="seis">6</td>
+   <td><button id="suma">+</td>
+  </tr>
+   <tr>
+   <td><button id="uno">1</td>
+   <td><button id="dos">2</td>
+   <td><button id="tres">3</td>
+   <td><button id="multiplicacion">x</td>
+  </tr>
+  <tr>
+   <td><button id="cero">0</td>
+   <td><button id="limpiar">C</td>
+   <td><button id="igual">=</td>
+   <td><button id="division">÷</td>
+  </tr>
+  
+ </table>
+ 
+ <Script>
+  var valora;
+  var valorb;
+  var operacion;
+ 
+ function init (){
+ //declaracion de variables
+  var resultado = document. getElementById("resultado");
+  var siete = document. getElementById("siete");
+  var ocho = document. getElementById("ocho");
+  var nueve = document. getElementById("nueve");
+  var cuatro = document. getElementById("cuatro");
+  var cinco = document. getElementById("cinco");
+  var seis = document. getElementById("seis");
+  var uno = document. getElementById("uno");
+  var dos = document. getElementById("dos");  
+  var tres = document. getElementById("tres");  
+  var multiplicacion = document. getElementById("multiplicacion");  
+  var cero = document. getElementById("cero");  
+  var limpiar = document. getElementById("limpiar");  
+  var igual = document. getElementById("igual");  
+  var division = document. getElementById("division");    
+ 
+  //funciones 
+  siete.onclick = function (e){
+   resultado.textContent = resultado.textContent + "7";
+  }
+  ocho.onclick = function (e){
+   resultado.textContent = resultado.textContent + "8";
+  }
+  nueve.onclick = function (e){
+   resultado.textContent = resultado.textContent + "9";
+  }
+  cuatro.onclick = function (e){
+   resultado.textContent = resultado.textContent + "4";
+  }
+  cinco.onclick = function (e){
+   resultado.textContent = resultado.textContent + "5";
+  }
+  seis.onclick = function (e){
+   resultado.textContent = resultado.textContent + "6";
+  }
+  uno.onclick = function (e){
+   resultado.textContent = resultado.textContent + "1";
+  }
+  dos.onclick = function (e){
+   resultado.textContent = resultado.textContent + "2";
+  }
+  tres.onclick = function (e){
+   resultado.textContent = resultado.textContent + "3";
+  }
+  cero.onclick = function (e){
+   resultado.textContent = resultado.textContent + "0";
+  }
+  limpiar.onclick = function (e){
+   resetear();
+  }
+
+
+  }
+ 
+ 
+ 
+ 
+ </Script>
+</body>
+</html>
